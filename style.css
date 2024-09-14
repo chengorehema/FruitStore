@@ -1,0 +1,68 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #056ed8;
+}
+
+header {
+  background-color: #056ed8;
+}
+header .navbar-brand {
+  font-size: 2rem;
+  color: #333;
+}
+header .nav-link {
+  color: #333;
+  font-size: 1rem;
+}
+header .nav-link:hover {
+  color: #dc3545;
+}
+header form .form-control {
+  border-radius: 50px;
+}
+header form .btn {
+  border-radius: 50px;
+}
+
+.hero-section {
+  background-color: #2f94fa;
+  padding: 5rem 0;
+}
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #333;
+}
+.hero-section p {
+  font-size: 1.2rem;
+  color: black;
+}
+.hero-section .btn {
+  background-color: #dc3545;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1.2rem;
+}
+.hero-section .btn:hover {
+  background-color: #e4606d;
+}
+.hero-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+}
+footer p {
+  color: #056ed8;
+  font-size: 0.9rem;
+}
+footer p a {
+  color: #056ed8;
+}
+footer p a:hover {
+  color: #eb8c95;
+}/*# sourceMappingURL=style.css.map */

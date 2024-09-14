@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Fruits Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header with Navigation Bar -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fruit Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product-listing.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->
+                </ul>
+                <!-- Search Bar and Cart Icon -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                    <a href="#" class="ms-3 cart-icon">
+                        <img src="img/shopping-cart-icon-buying-concept-for-graphic-design-web-site-social-media-ui-mobile-app-png.png" alt="Cart" width="40">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-start">
+                    <h1>Best Fresh Fruits for You!</h1>
+                    <p>Enjoy our premium selection of organic fruits.</p>
+                    <a href="#" class="btn btn-danger btn-lg">Shop Now</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/fruits-banner.jpeg" alt="Promotional Organic Fruits" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories Section -->
+    <section class="product-categories py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Explore Categories</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="category-box text-center">
+                        <img src="img/Citrus Fruits.jpeg" class="img-fluid mb-3" alt=" Citrus Fruits">
+                        <h4>Citrus Fruits</h4>
+                        <p>Zesty and refreshing, a citrus delight.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-box text-center">
+                        <img src="img/berries.jpeg" class="img-fluid mb-3" alt="Berries">
+                        <h4>Berries</h4>
+                        <p>Nature’s perfect little treats.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-box text-center">
+                        <img src="img/tropical.jpeg" class="img-fluid mb-3" alt="Tropical Fruits">
+                        <h4>Tropical Fruits</h4>
+                        <p>A taste of the tropics in every bite.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category-box text-center">
+                        <img src="img/dried-fruits.jpeg" class="img-fluid mb-3" alt="Dried Fruits">
+                        <h4>Dried Fruits</h4>
+                        <p>Perfect for a healthy snack.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best-Selling Products Section -->
+    <section class="best-sellers py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Best-Selling Products</h2>
+            <div class="row">
+                <!-- Product 1-->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="img/blueberries.jpeg" class="img-fluid mb-3" alt="Product 1"  width="150">
+                        <h4>Blueberries</h4>
+                        <p>$5.99</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="img/banana.jpeg" class="img-fluid mb-3" alt="Product 2"  width="215">
+                        <h4>Bananas</h4>
+                        <p>$3.99</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="img/apples.jpeg" class="img-fluid mb-3" alt="Product 3" width="240">
+                        <h4>Apples</h4>
+                        <p>$2.99 each</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-md-3">
+                    <div class="product-card text-center">
+                        <img src="img/cashewnut.jpeg" class="img-fluid mb-3" alt="Product 4" width="200">
+                        <h4>Cashew nuts</h4>
+                        <p>$6.99</p>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- btn-click for more -->
+            <div class="text-center my-3">
+                <button class="btn btn-danger">Click For More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Follow us on social media:</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <p>© 2024  Fruits Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
