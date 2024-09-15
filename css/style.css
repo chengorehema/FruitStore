@@ -1,0 +1,34 @@
+.main-container{
+    height: 60vh;
+}
+.main-container-content{
+    margin-top: 15vh;
+}
+.main-container-image img{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 50%;
+}
+    .hero-section {
+        background-image: url(../img/back.jpg);
+        background-size: cover; /* Ensures the image covers the entire section */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+        position: relative; /* Allows for the overlay to be positioned */
+    }
+    
+    .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4); /* Dark overlay with 50% opacity */
+        z-index: 1; /* Ensures the overlay is above the background image */
+    }
+    
+    .hero-section > * {
+        position: relative;
+        z-index: 2; /* Ensures content is above the overlay */
+    }

@@ -5,7 +5,7 @@ $dark-color: #333;
 $font-color: #333;
 
 // Import Bootstrap for mixins and grid
-// @import "bootstrap";
+// @import "~bootstrap/scss/bootstrap";
 
 // General Styles
 body {
@@ -99,6 +99,73 @@ footer {
             &:hover {
                 color: lighten($primary-color, 20%);
             }
+        }
+    }
+}
+
+// Product Listing Styles
+.product-listing {
+    .filter-group {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .product-card {
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        &:hover .product-hover {
+            opacity: 1;
+        }
+        .product-image {
+            position: relative;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+            .product-hover {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;
+            }
+        }
+        h4 {
+            margin-top: 10px;
+        }
+        p {
+            color: #888;
+        }
+    }
+}
+// Pagination Styles
+.pagination {
+    .page-item {
+        .page-link {
+            color: #007bff;
+            &:hover {
+                background-color: #e9ecef;
+            }
+        }
+        &.active .page-link {
+            background-color: #007bff;
+            border-color: #007bff;
+            color: white;
         }
     }
 }
