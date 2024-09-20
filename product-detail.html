@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Store | Product Detail</title>
+    <link rel="icon" href="img/logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Navigation Bar -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <div class="container">
+            <img src="img/logo.png" alt="logo" class="mainlogo">
+            <a class="navbar-brand" href="#">Fruit Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product-listing.html">Product Listing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                </ul>
+                <!-- Search Bar and Cart Icon -->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-danger" type="submit">Search</button>
+                    <a href="#" class="ms-3 cart-icon">
+                        <img src="img/shopping-cart-icon-buying-concept-for-graphic-design-web-site-social-media-ui-mobile-app-png.png" alt="Cart" width="40">
+                    </a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Product Image Carousel -->
+                <div class="col-md-6">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/berries.jpeg" class="d-block product-detail-images h-50 w-100" alt="Product Image 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/berry.jpeg" class="d-block product-detail-images w-100" alt="Product Image 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/blueberries.jpeg" class="d-block product-detail-images w-100" alt="Product Image 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Description -->
+                <div class="col-md-6">
+                    <h1>Blueberries</h1>
+                    <p class="price">$5.99</p>
+                    <p>Fresh and organic blueberries, perfect for smoothies, baking, or snacking.</p>
+
+                    <div class="mb-3">
+                        <label for="sizeSelect" class="form-label">Available Sizes</label>
+                        <select class="form-select" id="sizeSelect">
+                            <option value="small">Small Pack</option>
+                            <option value="medium">Medium Pack</option>
+                            <option value="large">Large Pack</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="quantity" class="form-label">Quantity</label>
+                        <input type="number" id="quantity" class="form-control" value="1" min="1">
+                    </div>
+
+                    <a class="btn btn-success" href="cart.html" id="addToCartBtn">Add to Cart</a>
+                </div>
+            </div>
+
+            <!-- Suggested Products Slider -->
+            <div class="suggested-products mt-5">
+                <h3>Suggested Products</h3>
+                <div id="suggestedCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/berry.jpeg" class="img-fluid" alt="Bananas">
+                                    <h4>Berries</h4>
+                                    <p>$3.99</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/apple.jpg" class="img-fluid" alt="Apples">
+                                    <h4>Apples</h4>
+                                    <p>$2.99</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/Cashews.jpg" class="img-fluid" alt="Cashew Nuts">
+                                    <h4>Cashew Nuts</h4>
+                                    <p>$6.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="img/orange.jpeg" class="img-fluid" alt="Oranges">
+                                    <h4>Oranges</h4>
+                                    <p>$4.99</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/banana1.jpeg" class="img-fluid" alt="Bananas">
+                                    <h4>Bananas</h4>
+                                    <p>$7.99</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <img src="img/papaya.jpeg" class="img-fluid" alt="Bananas">
+                                    <h4>Papaya</h4>
+                                    <p>$7.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#suggestedCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>Follow us on social media:</p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <p>© 2024 Fruits Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+     <!-- Bootstrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>

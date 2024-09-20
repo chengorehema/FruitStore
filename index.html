@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Fruits Store</title>
+    <link rel="icon" href="img/logo.png">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -15,6 +16,7 @@
     <!-- Header with Navigation Bar -->
     <header class="navbar navbar-expand-lg navbar-light bg-light py-3">
         <div class="container">
+            <img src="img/logo.png" alt="logo" class="mainlogo">
             <a class="navbar-brand" href="#">Fruit Store</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,7 +25,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="product-listing.html">Product Listing</a></li>
-                    <li class="nav-item"><a class="nav-link" href="product-detail.html">Product Details</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="product-detail.html">Product Details</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
                     <!-- <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li> -->
@@ -59,87 +61,111 @@
     <!-- Product Categories Section -->
     <section class="product-categories py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Explore Categories</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="category-box text-center">
-                        <img src="img/Citrus Fruits.jpeg" class="img-fluid mb-3" alt=" Citrus Fruits">
-                        <h4>Citrus Fruits</h4>
-                        <p>Zesty and refreshing, a citrus delight.</p>
-                    </div>
+            <div class="product-title mb-4 mt-2">
+                <div>
+                    <h3 class="text-start mb-2">Explore Categories</h3>
+                    <p>Discover fresh, juicy fruits for everyone.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="category-box text-center">
-                        <img src="img/berries.jpeg" class="img-fluid mb-3" alt="Berries">
-                        <h4>Berries</h4>
-                        <p>Nature’s perfect little treats.</p>
-                    </div>
+                <div class="text-center my-3">
+                    <a class="button-link btn mx-3 btn-outline-primary" href="./product-listing.html">view all</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="category-box text-center">
-                        <img src="img/tropical.jpeg" class="img-fluid mb-3" alt="Tropical Fruits">
-                        <h4>Tropical Fruits</h4>
-                        <p>A taste of the tropics in every bite.</p>
+                
+            </div>
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="category-box text-center">
+                            <img src="img/citrus2.png" class="img-fluid category-image mb-3" alt="Citrus Fruits">
+                            <h5>Citrus Fruits</h5>
+                            <p>Zesty and refreshing, a citrus delight.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="category-box text-center">
-                        <img src="img/dried-fruits.jpeg" class="img-fluid mb-3" alt="Dried Fruits">
-                        <h4>Dried Fruits</h4>
-                        <p>Perfect for a healthy snack.</p>
+                    <div class="col-md-3">
+                        <div class="category-box text-center">
+                            <img src="img/berry.jpeg" class="img-fluid category-image mb-3" alt="Berries">
+                            <h5>Berries</h5>
+                            <p>Nature’s perfect little treats.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-box text-center">
+                            <img src="img/coconut.jpg" class="img-fluid category-image mb-3" alt="Tropical Fruits">
+                            <h5>Tropical Fruits</h5>
+                            <p>A taste of the tropics in every bite.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="category-box text-center">
+                            <img src="img/Cashews.jpg" class="img-fluid category-image mb-3" alt="Dried Fruits">
+                            <h5>Dried Fruits</h5>
+                            <p>Perfect for a healthy snack.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            
+            
     </section>
 
     <!-- Best-Selling Products Section -->
     <section class="best-sellers py-5 bg-light">
+
         <div class="container">
-            <h2 class="text-center mb-4">Best-Selling Products</h2>
+            <!-- <h2 class="text-center mb-4">Best-Selling Products</h2> -->
+            <div class="products-title mb-4 mt-2">
+                <div>
+                    <h3 class="text-start mb-2">Best-Selling Products</h3>
+                    <p>Discover fresh, juicy fruits for everyone.</p>
+                </div>
+                <div class="text-center my-3">
+                    <a class="button-link btn mx-3 btn-outline-primary" href="./product-listing.html">view all</a>
+                </div>
+                
+            </div>
             <div class="row">
                 <!-- Product 1-->
                 <div class="col-md-3">
                     <div class="product-card text-center">
-                        <img src="img/blueberries.jpeg" class="img-fluid mb-3" alt="Product 1"  width="150">
-                        <h4>Blueberries</h4>
+                        <img src="img/blueberry.jpeg" class="img-fluid mb-3 product-image" alt="Product 1">
+                        <h5>Blueberries</h5>
                         <p>$5.99</p>
-                        <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-success btn-text">Add to Cart</a>
                     </div>
                 </div>
                 <!-- Product 2 -->
                 <div class="col-md-3">
                     <div class="product-card text-center">
-                        <img src="img/banana.jpeg" class="img-fluid mb-3" alt="Product 2"  width="215">
-                        <h4>Bananas</h4>
+                        <img src="img/bananas.png" class="img-fluid mb-3 product-image" alt="Product 2">
+                        <h5>Bananas</h5>
                         <p>$3.99</p>
-                        <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-success btn-text">Add to Cart</a>
                     </div>
                 </div>
                 <!-- Product 3 -->
                 <div class="col-md-3">
                     <div class="product-card text-center">
-                        <img src="img/apples.jpeg" class="img-fluid mb-3" alt="Product 3" width="240">
-                        <h4>Apples</h4>
+                        <img src="img/apple.jpg" class="img-fluid mb-3 product-image" alt="Product 3">
+                        <h5>Apples</h5>
                         <p>$2.99 each</p>
-                        <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-success btn-text">Add to Cart</a>
                     </div>
                 </div>
                 <!-- Product 4 -->
                 <div class="col-md-3">
                     <div class="product-card text-center">
-                        <img src="img/cashewnut.jpeg" class="img-fluid mb-3" alt="Product 4" width="200">
-                        <h4>Cashew nuts</h4>
+                        <img src="img/Avocado.jpg" class="img-fluid mb-2 product-image" alt="Product 4">
+                        <h5>Cashew nuts</h5>
                         <p>$6.99</p>
-                        <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="#" class="btn btn-outline-success btn-text">Add to Cart</a>
                     </div>
                 </div>
             </div>
             <br>
             <!-- btn-click for more -->
-            <div class="text-center my-3">
+            <!-- <div class="text-center my-3">
                 <button class="btn btn-danger">Click For More</button>
-            </div>
+            </div> -->
         </div>
     </section>
 

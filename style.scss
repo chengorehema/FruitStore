@@ -9,7 +9,7 @@ $font-color: #333;
 
 // General Styles
 body {
-    font-family: 'Arial', sans-serif;
+    // font-family: 'Arial', sans-serif;
     color: $font-color;
     background-color: $secondary-color;
 }
@@ -17,6 +17,12 @@ body {
 // Navbar Styles
 header {
     background-color: $secondary-color;
+
+    .mainlogo{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
 
     .navbar-brand {
         font-size: 2rem;
@@ -43,21 +49,30 @@ header {
 }
 
 // Hero Section Styles
+// .hero-section {
+//     background-image: url('../img/hero-bg.jpg');
+//     background-size: cover;
+//     background-color: lighten($secondary-color, 15%);
+//     padding: 5rem 0;
+
 .hero-section {
-    background-image: url('../img/hero-bg.jpg');
-    background-size: cover;
-    background-color: lighten($secondary-color, 15%);
-    padding: 5rem 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backfour.jpg);
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    position: relative; /* Allows for the overlay to be positioned */
+    height: 75vh;
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: bold;
-        color: $dark-color;
+        margin-top: 16vh;
+        color: white;
     }
 
     p {
         font-size: 1.2rem;
-        color: darken($dark-color, 20%);
+        color: darken(white, 50%);
     }
 
     .btn {
@@ -77,12 +92,236 @@ header {
     }
 }
 
-/ Best-sellers section
-.best-sellers-section {
-    .card {
-        transition: all 0.3s ease;
+// Product categories
+.product-categories {
+    background-color: gainsboro;
+
+    .product-title {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .category-box {
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+
+        .category-image {
+            width: 100%;
+            height: auto;
+            max-width: 250px; // Ensures uniform width
+            height: 200px; // Ensures uniform height
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        &:hover .category-hover {
+            opacity: 1;
+        }
+
+        .category-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        h4 {
+            margin-top: 10px;
+        }
+
+        p {
+            color: #888;
+        }
+
+        // Remove underline from the button link
+        .button-link {
+            text-decoration: none; 
+            color: inherit; 
+            &:hover {
+                text-decoration: none; // Ensures no underline on hover
+            }
+        }
+    }
+}
+
+
+// Best-sellers section
+.best-sellers{
+    background-color: rgb(211, 206, 206);
+
+    .products-title{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .product-card {
+        text-align: center;
+        // border: 1px solid #ddd;
+        // border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        padding: 15px;
+
+        .product-image {
+            width: 100%;
+            // background-color: white;
+            height: auto;
+            max-width: 250px; /* Ensures uniform width */
+            height: 200px; /* Ensures uniform height */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-text{
+            font-size: 13px;
+        }
+
+        &:hover .product-hover {
+            opacity: 1;
+        }
+
+        .product-hover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        h4 {
+            margin-top: 10px;
+        }
+
+        p {
+            color: #888;
+        }
+        // Remove underline from the button link
+        .button-link {
+            text-decoration: none; 
+            color: inherit; 
+            &:hover {
+                text-decoration: none; // Ensures no underline on hover
+            }
+        }
+    }
+}
+    // .card {
+    //     transition: all 0.3s ease;
+    //     &:hover {
+    //         transform: scale(1.05);
+    //     }
+    // }
+
+
+    // Product Listing Styles
+.product-listing {
+    background-color: #f9f9f9;
+
+    .filters {
+        .form-control {
+            margin-bottom: 10px;
+        }
+    }
+
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        transition: transform 0.3s ease;
+        
+        .product-image {
+            width: 100%;
+            height: auto;
+            max-width: 250px;
+            height: 200px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
         &:hover {
-            transform: scale(1.05);
+            transform: translateY(-10px);
+        }
+
+        &:hover .product-image {
+            transform: scale(1.1);
+        }
+    }
+
+    .pagination {
+        .page-link {
+            color: $primary-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}
+
+.cart-page{
+    background-color: gainsboro;
+
+    .cart-summary{
+        padding-bottom: 30px;
+    }
+}
+
+.product-detail{
+    background-color: gainsboro;
+
+    img{
+        width: 100%!important;
+        height: 430px!important;
+        border-radius: 30px !important;
+    }
+}
+// Suggested Products Slider
+.suggested-products {
+    h3 {
+        margin-bottom: 20px;
+    }
+
+    img{
+        height: 250px!important;
+        width: 100%!important;
+        border-radius: 20px;
+    }
+
+    .product-detail-images{
+        width: 100%!important;
+        height: 60%!important;
+    }
+
+    .carousel-item {
+        .col-md-4 {
+            text-align: center;
+
+            h4 {
+                margin-top: 10px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                color: $primary-color;
+            }
         }
     }
 }
@@ -90,18 +329,25 @@ header {
 // Footer Styles
 footer {
     background-color: $dark-color;
-    p {
-        color: $secondary-color;
-        font-size: 0.9rem;
+    padding: 20px;
 
-        a {
+    p {
+        color: white;
+        font-size: 0.9rem;
+    }
+
+     a {
             color: $secondary-color;
+            margin-right: 10px; // Add spacing between links
             &:hover {
-                color: lighten($primary-color, 20%);
+                color: lighten($primary-color, 40%);  
+            }
+            i {
+                margin-right: 5px; 
             }
         }
     }
-}
+
 
 // Product Listing Styles
 .product-listing {
